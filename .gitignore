@@ -1,0 +1,13 @@
+*.el
+*.*~
+*.out
+*.aux
+*.bbl
+*.blg
+*.log
+*.snm
+*.toc
+*.vrb
+*.synctex*
+*.nav
+example/presentation.log
