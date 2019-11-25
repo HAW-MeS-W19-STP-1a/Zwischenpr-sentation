@@ -1,18 +1,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% Beamer Presentation
-% LaTeX Template
-% Version 1.0 (10/11/12)
+% Beamer Presentation LaTeX Template Version 1.0 (10/11/12)
 % 
 % This template has been downloaded from:
 % http://www.LaTeXTemplates.com
 % 
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% License: CC BY-NC-SA 3.0
+% (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 % ----------------------------------------------------------------------------------------
-%	PACKAGES AND THEMES
+% PACKAGES AND THEMES
 % ----------------------------------------------------------------------------------------
 
 \documentclass{beamer}
@@ -20,8 +18,10 @@
 \mode<presentation> {
 
   % The Beamer class comes with a number of default slide themes
-  % which change the colors and layouts of slides. Below this is a list
-  % of all the themes, uncomment each in turn to see what they look like.
+  % which change the colors and layouts of slides. Below this is a
+  % list
+  % of all the themes, uncomment each in turn to see what they look
+  % like.
 
   % \usetheme{default}
   % \usetheme{AnnArbor}
@@ -35,7 +35,7 @@
   % \usetheme{Darmstadt}
   % \usetheme{Dresden}
   % \usetheme{Frankfurt}
-   \usetheme{Goettingen}
+  \usetheme{Goettingen}
   % \usetheme{Hannover}
   % \usetheme{Ilmenau}
   % \usetheme{JuanLesPins}
@@ -71,28 +71,27 @@
   % \usecolortheme{wolverine}
 
   % \setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
-   \setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+  \setbeamertemplate{footline}[page
+  number] % To replace the footer line in all slides with a simple slide count uncomment this line
 
-  % \setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+  % \setbeamertemplate{navigation
+  % symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
 }
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage[german]{babel} % Required to compile in Windows
-\usepackage[latin1]{inputenc}
-\usepackage{caption}
+\usepackage[latin1]{inputenc} \usepackage{caption}
 \usepackage{subcaption}
-%\usepackage{physics}
-\usepackage{mathtools}
-\usepackage{natbib}
-\usepackage[T1]{fontenc}
+% \usepackage{physics}
+\usepackage{mathtools} \usepackage{natbib} \usepackage[T1]{fontenc}
 
 
 \AtBeginSection[]{
   \begin{frame}
-    \vfill
-    \centering
-    \begin{beamercolorbox}[sep = 8pt, center, shadow = true, rounded = true]{title}
+    \vfill \centering
+    \begin{beamercolorbox}[sep = 8pt, center, shadow = true, rounded =
+      true]{title}
       \usebeamerfont{title}\insertsectionhead\par%
     \end{beamercolorbox}
     \vfill
@@ -100,17 +99,20 @@
 }
 
 % ----------------------------------------------------------------------------------------
-%	TITLE PAGE
+% TITLE PAGE
 % ----------------------------------------------------------------------------------------
 
-\title[]{Projekt 1a: Zwischenbericht} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[]{Projekt 1a:
+  Zwischenbericht} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{Isabell Albrecht, Erik Engelhardt, Oliver Kochan, Florian Steffens} % Your name
+\author{Isabell Albrecht, Erik Engelhardt, Oliver Kochan, Florian
+  Steffens} % Your name
 \institute[HAW] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
-{
-  Hochschule für angewandte Wissenschaften -- Hamburg \\ % Your institution for the title page
+{ Hochschule für angewandte Wissenschaften -- Hamburg
+  \\ % Your institution for the title page
   \medskip
-  %\textit{erik.engelhardt@haw-hamburg.de, hier@email.eintragen} % Your email address
+  % \textit{erik.engelhardt@haw-hamburg.de,
+  % hier@email.eintragen} % Your email address
 }
 
 \date{\today} % Date, can be changed to a custom date
@@ -122,110 +124,141 @@
 \end{frame}
 
 \section{Einleitung}
-% - Gruppenmitglieder vorstellen
-% - welches Projekt bearbeiten wir (Bild)
+% - Gruppenmitglieder vorstellen - welches Projekt bearbeiten wir
+% (Bild)
 \begin{frame}
   \frametitle{Wetterstation - Projekt 1a}
   \begin{figure}
     \centering
     \begin{minipage}[t]{0.45\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{img/Wetterstation_1.png}
+      \centering
+      \includegraphics[width=\linewidth]{img/Wetterstation_1.png}
     \end{minipage}% <- sonst wird hier ein Leerzeichen eingefügt
     \hfill
     \begin{minipage}[t]{0.45\linewidth}
-        \centering
-        \includegraphics[width=\linewidth]{img/Wetterstation_2.png}
+      \centering
+      \includegraphics[width=\linewidth]{img/Wetterstation_2.png}
     \end{minipage}
-    \end{figure}
-  %\emph{Diese Wetterstation wird sehr gut.}
+  \end{figure}
+  % \emph{Diese Wetterstation wird sehr gut.}
 \end{frame}
 
 \begin{frame}[allowframebreaks]
-  %\frametitle{Gliederung} % Table of contents slide, comment this block out to remove it
+  % \frametitle{Gliederung} % Table of contents slide, comment this block out to remove it
   \tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
 \end{frame}
 
 % ----------------------------------------------------------------------------------------
-%	PRESENTATION SLIDES
+% PRESENTATION SLIDES
 % ----------------------------------------------------------------------------------------
 
 \section{Software}
-% - zusammenfassen der Puntke aus Vorlage
-% - eingrenzung Messbereiche
+% - zusammenfassen der Puntke aus Vorlage - eingrenzung Messbereiche
 \subsection{Fertig}
 \begin{frame}
   \frametitle{Software - Fertig}
   \begin{itemize}
-  	\item \emph{Grundgerüst}
-    \item \emph{Ansteuerung I2C, SPI, UART, ADC, RTC}
-  	\item \emph{Einlesen und Umrechnen der Sensordaten}
-    \item \emph{Lageregelung}
-  	\item \emph{Auswertung NMEA-Sentences vom GPS-Modul}
-    \item \emph{Berechnung von Azimut und Elevation}      
-    \item \emph{Kommunikation über Bluetooth}
-    \item \emph{Externe Bibliothek für FAT32-Dateisystem}
-    \item \emph{Energiesparmaßnahmen}
+  \item \emph{Grundgerüst}
+  \item \emph{Ansteuerung I2C, SPI, UART, ADC, RTC}
+  \item \emph{Einlesen und Umrechnen der Sensordaten}
+  \item \emph{Lageregelung}
+  \item \emph{Auswertung NMEA-Sentences vom GPS-Modul}
+  \item \emph{Berechnung von Azimut und Elevation}
+  \item \emph{Kommunikation über Bluetooth}
+  \item \emph{Externe Bibliothek für FAT32-Dateisystem}
+  \item \emph{Energiesparmaßnahmen}
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Berechnung der Sonnenposition}
+  \begin{itemize}
+  \item Berechnung von Zenith und Azimut
+  \item Implementierung nach \citet[]{Roderick1992}
+  \end{itemize}
+  \begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{./img/Representation-of-azimuth-and-zenith-angles.png}
+    \caption{Beschreibung der Sonnenposition durch Zenith und
+      Azimut~\cite[]{Nou2016}}\label{fig:zen_azi}
+  \end{figure}
+\end{frame}
+\begin{frame}
+  \frametitle{Berechnung der Sonnenposition (Beispiel)}
+  \begin{itemize}
+  \item Hamburg, 26.11.2019, 9:30h
+  \item Zenith = 81.1°
+  \item Azimuth = 143.3°
+  \end{itemize}
+  \begin{figure}[hbtp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{./img/Representation-of-azimuth-and-zenith-angles.png}
+    \caption{Beschreibung der Sonnenposition durch Zenith und
+      Azimut~\cite[]{Nou2016}}\label{fig:zen_azi}
+  \end{figure}
 \end{frame}
 \subsection{Ausstehend}
 \begin{frame}
   \frametitle{Software - Ausstehend}
   \begin{itemize}
-    \item \emph{Zeitgesteuerte Nachführung des Panels}
-  	\item \emph{Bluetooth: AT command set; Demo-Mode}
-    \item \emph{Visualisierungssoftware auf einem PC}
-    \item \emph{Speichern der Sensordaten auf der SD-Karte}
-   \end{itemize}
+  \item \emph{Zeitgesteuerte Nachführung des Panels}
+  \item \emph{Bluetooth: AT command set; Demo-Mode}
+  \item \emph{Visualisierungssoftware auf einem PC}
+  \item \emph{Speichern der Sensordaten auf der SD-Karte}
+  \end{itemize}
 \end{frame}
 
-%\end{frame}
+% \end{frame}
 \section{Elektronik}
 % - Sensoren kurz vorstellen und Bezug auf Anforderungen nehmen
 \begin{frame}
   \frametitle{Elektronik - Fertig}
   \subsection{Fertig}
         
-        \begin{itemize}
-            \item \emph{Spannungsversorgung}
-            \item \emph{Schaltplan}
-            \item \emph{Platinenlayout}
-            \item \emph{Test der Motoren}
-         \end{itemize}
+  \begin{itemize}
+  \item \emph{Spannungsversorgung}
+  \item \emph{Schaltplan}
+  \item \emph{Platinenlayout}
+  \item \emph{Test der Motoren}
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Elektronik - Ausstehend}
-    \subsection{Ausstehend}
-        \begin{itemize}
-        	\item \emph{Aufbau der Platine}
-        	\item \emph{Verkabelung der Sensoren}
-        	\item \emph{Kabelmanagement}
-        \end{itemize}
+  \frametitle{Elektronik - Ausstehend}
+  \subsection{Ausstehend}
+  \begin{itemize}
+  \item \emph{Aufbau der Platine}
+  \item \emph{Verkabelung der Sensoren}
+  \item \emph{Kabelmanagement}
+  \end{itemize}
 \end{frame}
     
 \section{Aufbau}
 \begin{frame}
-	\frametitle{Aufbaue - Fertig}
-	\subsection{Fertig}
-	\begin{itemize}
-		\item \emph{Planung}
-		\item \emph{Stabilität des Solarmoduls}
-		\item \emph{3D-Druck - Halterung für Sensoren}
-	\end{itemize}
+  \frametitle{Aufbaue - Fertig}
+  \subsection{Fertig}
+  \begin{itemize}
+  \item \emph{Planung}
+  \item \emph{Stabilität des Solarmoduls}
+  \item \emph{3D-Druck - Halterung für Sensoren}
+  \end{itemize}
+  \begin{figure}[hbtp]
+    \centering \includegraphics[width=0.8\textwidth]{./img/druck.png}
+    \caption{Adapter und Halter für die Sensoren}
+  \end{figure}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Aufbau - Ausstehend}
-	\subsection{Ausstehend}
-	\begin{itemize}
-		\item \emph{Montage - Halterungen}
-		\item \emph{Montage - Sensoren}
-		\item \emph{Montage - Kabel}
-		\item \emph{Montage - Gehäuse (Platine)}
-		\item \emph{Montage - Spannungsversorgung}
-		\item \emph{3D-Druck - Gehäuse}
-	\end{itemize}
+  \frametitle{Aufbau - Ausstehend}
+  \subsection{Ausstehend}
+  \begin{itemize}
+  \item \emph{Montage - Halterungen}
+  \item \emph{Montage - Sensoren}
+  \item \emph{Montage - Kabel}
+  \item \emph{Montage - Gehäuse (Platine)}
+  \item \emph{Montage - Spannungsversorgung}
+  \item \emph{3D-Druck - Gehäuse}
+  \end{itemize}
 \end{frame}
 
 \section{Zeitplan}
@@ -234,10 +267,14 @@
 \begin{frame}
   \frametitle{Zeitplan}
   \begin{itemize}
-  	\item \emph{Planung ist vollständig abgeschlossen}
-  	\item \emph{Fortführung nach Ankunft der Platine}
-  	\item \emph{Dokumentation blablabla} %wird Montag eingereicht
+  \item \emph{Planung ist vollständig abgeschlossen}
+  \item \emph{Fortführung nach Ankunft der Platine}
+  \item \emph{Dokumentation blablabla} %wird Montag eingereicht
   \end{itemize}
+\end{frame}
+\begin{frame}[allowframebreaks]
+  \frametitle{Literatur- und Quellenverzeichnis}
+  \bibliographystyle{plainnat} \bibliography{literature}
 \end{frame}
 
 % ------------------------------------------------
